@@ -1,0 +1,216 @@
+Selenium Java 
+https://notepad.pw/lti
+Class 1
+
+http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx?ReturnUrl=%2fsamples%2fTestComplete11%2fWebOrders%2fDefault.aspx
+
+	Web Orders Login
+
+Ctrl+Shift+o to add import statement.
+ctrl_shift+f
+ 
+
+http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx?ReturnUrl=%2fsamples%2fTestComplete11%2fWebOrders%2fDefault.aspx
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+x
+yes
+ 
+https://www.geeksforgeeks.org/java/collection-interface-in-java-with-examples/
+Collection Interface in Java - GeeksforGeeks
+Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling,...
+ 
+
+
+Class 2
+
+
+
+
+private int x=10;
+
+	  public static void main(String[] args) {
+		Class_Object_Example myObj = new Class_Object_Example();
+	    System.out.println(myObj.x);
+		//  x = 40;
+	    //System.out.println(x);
+	  }
+	  
+
+
+
+
+// Overloaded sum(). This sum takes three int parameters
+	public int sum(int x, int y, int z) {
+		return (x + y + z);
+	}
+
+	// Overloaded sum(). This sum takes two double
+	// parameters
+	public double sum(double x, double y) {
+		return (x + y);
+	}
+
+	// Driver code
+	public static void main(String args[]) {
+		Method_Overloading_Example s = new Method_Overloading_Example();
+		System.out.println(s.sum(10, 20));
+		System.out.println(s.sum(10, 20, 30));
+		System.out.println(s.sum(10.5, 20.5));
+	}
+
+
+
+
+
+
+
+	int getRateOfInterest() {
+		return 5;
+	}
+
+	static String getBankName() {
+		return "RBI";
+	}
+
+}
+
+// Creating child classes.
+class SBI extends Bank {
+	int getRateOfInterest() {
+		return 8;
+	}
+}
+
+class ICICI extends Bank {
+	int getRateOfInterest() {
+		return 7;
+	}
+}
+
+class AXIS extends Bank {
+	int getRateOfInterest() {
+		return 9;
+	}
+}
+class HDFC extends Bank {
+//		int getRateOfInterest() {
+//			return 9;
+//		}
+
+
+
+
+
+
+
+// Test class to create objects and call the methods
+
+	public static void main(String args[]) {
+		SBI s = new SBI();
+		ICICI i = new ICICI();
+		AXIS a = new AXIS();
+		HDFC h = new HDFC();
+		System.out.println("HDFC Rate of Interest: " + h.getRateOfInterest());
+		System.out.println("SBI Rate of Interest: " + s.getRateOfInterest());
+		System.out.println("Bank Name: " + SBI.getBankName());
+		System.out.println("ICICI Rate of Interest: " + i.getRateOfInterest());
+		System.out.println("AXIS Rate of Interest: " + a.getRateOfInterest());
+		// Suppose user want to use main RBI interest rate then below exaple
+		Method_Overriding_Example m = new Method_Overriding_Example();
+		System.out.println("Bank Rate of Interest: " + m.getRateOfInterest());
+	}
+
+
+
+
+
+interface Animal {
+	public void animalSound(); // interface method (does not have a body)
+
+	public void sleep(); // interface method (does not have a body)
+}
+
+class Pig implements Animal {
+	public void animalSound() {
+		System.out.println("The pig says: wee wee");
+	}
+
+	public void sleep() {
+		System.out.println("Zzz");
+	}
+}
+
+public class Interface_Example {
+
+	public static void main(String[] args) {
+		// Example of Interface
+		Animal myPig = new Pig();
+		// Pig myPig = new Pig();
+		myPig.animalSound();
+		myPig.sleep();
+	}
+
+}
+
+
+
+
+
+// Main driver method
+    public static void main(String[] args)
+    {
+ 
+        // Arrays
+        String[] gfg
+            = new String[] { "G", "E", "E", "K", "S" };
+ 
+        // Trying printing the above array
+        System.out.print(gfg);
+ 
+        // New Line
+        System.out.println();
+ 
+        // Collection
+        // Let us arbitarly create an empty ArrayList
+        // of string type
+        ArrayList<String> al = new ArrayList<String>();
+ 
+        // Adding elements to above List
+        // using add() method
+        al.add("g");
+        al.add("e");
+        al.add("e");
+        al.add("k");
+        al.add("s");
+ 
+        // Printing all elements of Collection (ArrayList)
+        System.out.println(al);
+    }
+
+
+
+
+
+
+
+Multidimentional Array
+
+public static void main(String[] args)
+    {
+ 
+        int[][] arr = { 
+        		{ 1, 2, 10, 20},        				
+        		{ 3, 4, 30, 40 },
+        		{ 5, 6, 50, 60 }
+        			  };
+ 
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 4; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+ 
+            System.out.println();
+        }
+    }
+ 
